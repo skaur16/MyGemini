@@ -51,6 +51,7 @@ fun Link(mainViewModel: MainViewModel) {
 
     val link = RetrofitObject.getLink().create(PostAPI::class.java)
     GlobalScope.launch {
+        Log.e("TAG", "Post Body -> ${mainViewModel.postBody.value}")
         val result = link.getAnswer( key,mainViewModel.postBody.value )
         if(result!=null){
             Log.e("RESULT", result.body().toString())

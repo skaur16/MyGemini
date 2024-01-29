@@ -11,4 +11,5 @@ class MainViewModel : ViewModel() {
     var partx = mutableStateOf(PartX())
     var link = mutableStateOf(false)
 
+
 }
