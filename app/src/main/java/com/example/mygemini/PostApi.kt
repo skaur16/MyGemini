@@ -10,7 +10,7 @@ interface PostAPI {
 
     @POST("gemini-pro:generateContent")
     suspend fun getAnswer(
-        @Query("key") key : String ,
+        @Query("key") key : String,
         @Body postBody: PostBody) : Response<ReceiveData>
 
 }
