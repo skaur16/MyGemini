@@ -30,18 +30,7 @@ fun Gemini(mainViewModel: MainViewModel) {
                 })
 
             Button(onClick = {
-                mainViewModel.postBody.value = mainViewModel.postBody.value.copy(
-                    contents = listOf(
-                        ContentX(
-                            listOf(
-                                PartX(
-                                    text = mainViewModel.text.value
-                                )
-                            )
-                        )
-                    )
-                )
-                mainViewModel.link.value = true
+                mainViewModel.link()
             })
 
             {

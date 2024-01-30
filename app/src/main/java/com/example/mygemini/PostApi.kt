@@ -9,9 +9,12 @@ import retrofit2.http.Query
 
 interface PostAPI {
 
-    @POST("gemini-pro:generateContent")
+
+
+    @POST("./")
+   // @Multipart
     suspend fun getAnswer(
         @Query("key") key : String,
-        @Body postBody: PostBody) : Response<ReceiveData>
+        @Body postBody: String) : Response<ReceiveData>
 
 }

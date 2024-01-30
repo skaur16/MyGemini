@@ -47,20 +47,9 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Link(mainViewModel: MainViewModel) {
 
-    val key = "AIzaSyAoDZj7Ujnw2-m-_GVYwItrP_S8f23lcfI"
+    mainViewModel.link()
 
-    val link = RetrofitObject.getLink().create(PostAPI::class.java)
-    GlobalScope.launch {
-        Log.e("TAG", "Post Body -> ${mainViewModel.postBody.value}")
-        val result = link.getAnswer( key,mainViewModel.postBody.value )
-        if(result!=null){
-            Log.e("RESULT", result.body().toString())
-        }
-        else{
-            Log.e("RESULT","null")
-        }
 
-    }
 
 
 }
