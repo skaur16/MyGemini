@@ -11,10 +11,9 @@ interface PostAPI {
 
 
 
-    @POST("./")
-   // @Multipart
+    @POST(".")
     suspend fun getAnswer(
         @Query("key") key : String,
-        @Body postBody: String) : Response<ReceiveData>
+        @Body postBody: PostBody) : Response<ReceiveData>
 
 }

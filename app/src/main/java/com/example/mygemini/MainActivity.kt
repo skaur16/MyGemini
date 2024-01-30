@@ -43,13 +43,4 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-@SuppressLint("CoroutineCreationDuringComposition")
-@Composable
-fun Link(mainViewModel: MainViewModel) {
 
-    mainViewModel.link()
-
-
-
-
-}
