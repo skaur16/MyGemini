@@ -1,4 +1,4 @@
-package com.example.mygemini
+package com.example.mygemini.data
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

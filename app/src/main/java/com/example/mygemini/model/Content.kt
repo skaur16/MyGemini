@@ -1,4 +1,4 @@
-package com.example.mygemini
+package com.example.mygemini.model
 
 data class Content(
     val parts: List<Part>,

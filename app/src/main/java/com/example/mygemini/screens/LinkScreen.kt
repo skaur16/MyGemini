@@ -1,4 +1,4 @@
-package com.example.mygemini
+package com.example.mygemini.screens
 
 import android.annotation.SuppressLint
 import android.util.Log

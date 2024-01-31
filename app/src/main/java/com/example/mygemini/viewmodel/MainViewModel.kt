@@ -4,18 +4,18 @@ import android.util.Log
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mygemini.PartX
-import com.example.mygemini.PostAPI
-import com.example.mygemini.PostBody
-import com.example.mygemini.RetrofitObject
-import kotlinx.coroutines.GlobalScope
+import com.example.mygemini.data.PostAPI
+import com.example.mygemini.model.PostBody
+import com.example.mygemini.data.RetrofitObject
 import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
 
-    var postBody = mutableStateOf(PostBody(
+    var postBody = mutableStateOf(
+        PostBody(
         listOf()
-    ))
+    )
+    )
     var question = mutableStateOf("")
     var key = mutableStateOf("AIzaSyAoDZj7Ujnw2-m-_GVYwItrP_S8f23lcfI")
 
